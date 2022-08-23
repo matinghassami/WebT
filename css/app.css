@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+body {
+    font-family: 'Markazi Text', serif;
+    @apply selection:bg-purple-700 selection:text-rose-400 h-full;
+}
+}

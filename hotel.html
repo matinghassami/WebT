@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>بهترین هتل های کشور</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/app.css" />
+    <link rel="stylesheet" href="./dist/index.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+       <!-- site header -->
+       <header class="w-full sm:h-[34rem] h-[20rem] relative">
+        <!-- header background and content -->
+        <div
+          class="bg-gradient-to-tr from-purple-700 bg-rose-600 bg-opacity-40 inset-0 w-full h-full z-10 relative flex flex-col justify-center items-center"
+        >
+          <!-- navbar -->
+        <nav
+        class="fixed top-0 inset-y-0 bg-purple-800 w-full h-16 flex flex-row-reverse justify-between items-center p-4 pl-10"
+      >
+        <!-- nav logo -->
+        <img
+          src="./img/logo.png"
+          class="top-1 left-1 w-24 h-24"
+          alt="destinations"
+        />
+        <!-- search input -->
+        <input
+          type="search"
+          class="rounded-md w-1/4 h-5/6 hidden sm:block bg-slate-100 bg-opacity-40 border border-rose-500 p-2 placeholder:text-black text-clack placeholder:italic focus:ring-1 ring-rose-600 focus:outline-none transition-all duration-300 ease-in"
+          placeholder="جستجو خدمات ما ..."
+        />
+        <!-- nav links -->
+        <div class="flex flex-row gap-6">
+          <a href="#">لندینگ</a>
+          <a href="#">صفحات</a>
+          <a href="#">صفحات خاص</a>
+          <a href="#">کامپوننت ها</a>
+          <a href="#">ورود</a>
+          <a href="#">ثبت نام</a>
+        </div>
+      </nav>
+          <!-- header details -->
+          <div class="flex flex-col gap-2 justify-center items-center">
+            <h1 class="sm:text-2xl text-base font-bold text-rose-900 animate-bounce">
+              بهترین هتل های را با ما پیدا کنید
+            </h1>
+            <h2 class="sm:text-xl text-xs font-medium text-orange-700 animate-bounce">
+              بهترین هتل ها برای سفر شما اینجاست
+            </h2>
+          </div>
+        </div>
+        <!-- header background image -->
+        <img
+          src="./img/tehran.jpg"
+          class="w-full h-full absolute top-0 right-0"
+          alt="destinations"
+        />
+      </header>
+      <!-- end header -->
+
+    <!-- start main -->
+    <main class="w-full h-full flex flex-col p-10 bg-slate-200">
+      <!-- Domestic top destinations -->
+      <div class="w-full h-full flex flex-col items-center justify-start gap-4">
+        <!-- titles -->
+        <div class="flex flex-col items-center justify-start">
+          <h3 class="text-base sm:text-xl font-medium">مقصد های پر طرفدار</h3>
+          <h3 class="text-sm sm:text-lg font-normal">
+            مقصد های پرطرفدار برای مسافرت شما
+          </h3>
+        </div>
+        <!-- cards container -->
+        <div class="grid sm:grid-cols-3 grid-cols-1 gap-4">
+          <!-- cards -->
+          <div
+            class="col-span-1 bg-rose-300 rounded-lg p-1 group relative overflow-hidden"
+          >
+            <a href="#">
+              <img
+                src="./img/Tehran-at-night.jpg"
+                class="aspect-video rounded-lg group-hover:scale-110 transition-transform duration-300 ease-linear"
+                alt="destinations"
+              />
+              <div
+                class="hidden group-hover:flex z-10 bg-slate-900 bg-opacity-60 w-full h-full absolute inset-0 rounded-lg justify-center items-center"
+              >
+                <h3 class="text-slate-200 font-medium text-lg sm:text-3xl">
+                  تهران
+                </h3>
+              </div>
+            </a>
+          </div>
+          <div
+            class="col-span-1 bg-rose-300 rounded-lg p-1 group relative overflow-hidden"
+          >
+            <a href="#">
+              <img
+                src="./img/Mashhad.jpg"
+                class="aspect-video rounded-lg group-hover:scale-110 transition-transform duration-300 ease-linear"
+                alt="destinations"
+              />
+              <div
+                class="hidden group-hover:flex z-10 bg-slate-900 bg-opacity-60 w-full h-full absolute inset-0 rounded-lg justify-center items-center"
+              >
+                <h3 class="text-slate-200 font-medium text-lg sm:text-3xl">
+                  مشهد مقدس
+                </h3>
+              </div>
+            </a>
+          </div>
+          <div
+            class="col-span-1 bg-rose-300 rounded-lg p-1 group relative overflow-hidden"
+          >
+            <a href="#">
+              <img
+                src="./img/Persepolis.jpg"
+                class="aspect-video rounded-lg group-hover:scale-110 transition-transform duration-300 ease-linear"
+                alt="destinations"
+              />
+              <div
+                class="hidden group-hover:flex z-10 bg-slate-900 bg-opacity-60 w-full h-full absolute inset-0 rounded-lg justify-center items-center"
+              >
+                <h3 class="text-slate-200 font-medium text-lg sm:text-3xl">
+                  پاسارگاد
+                </h3>
+              </div>
+            </a>
+          </div>
+          <div
+            class="col-span-1 bg-rose-300 rounded-lg p-1 group relative overflow-hidden"
+          >
+            <a href="#">
+              <img
+                src="./img/isfahan.jpg"
+                class="aspect-video rounded-lg group-hover:scale-110 transition-transform duration-300 ease-linear"
+                alt="destinations"
+              />
+              <div
+                class="hidden group-hover:flex z-10 bg-slate-900 bg-opacity-60 w-full h-full absolute inset-0 rounded-lg justify-center items-center"
+              >
+                <h3 class="text-slate-200 font-medium text-lg sm:text-3xl">
+                  اصفهان
+                </h3>
+              </div>
+            </a>
+          </div>
+          <div
+            class="col-span-1 bg-rose-300 rounded-lg p-1 group relative overflow-hidden"
+          >
+            <a href="#">
+              <img
+                src="./img/shiraz.jpg"
+                class="aspect-video rounded-lg group-hover:scale-110 transition-transform duration-300 ease-linear"
+                alt="destinations"
+              />
+              <div
+                class="hidden group-hover:flex z-10 bg-slate-900 bg-opacity-60 w-full h-full absolute inset-0 rounded-lg justify-center items-center"
+              >
+                <h3 class="text-slate-200 font-medium text-lg sm:text-3xl">
+                  شیراز
+                </h3>
+              </div>
+            </a>
+          </div>
+          <div
+            class="col-span-1 bg-rose-300 rounded-lg p-1 group relative overflow-hidden"
+          >
+            <a href="#">
+              <img
+                src="./img/Tabriz.jpg"
+                class="aspect-video rounded-lg group-hover:scale-110 transition-transform duration-300 ease-linear"
+                alt="destinations"
+              />
+              <div
+                class="hidden group-hover:flex z-10 bg-slate-900 bg-opacity-60 w-full h-full absolute inset-0 rounded-lg justify-center items-center"
+              >
+                <h3 class="text-slate-200 font-medium text-lg sm:text-3xl">
+                  تبریز
+                </h3>
+              </div>
+            </a>
+          </div>
+          <div
+            class="col-span-1 bg-rose-300 rounded-lg p-1 group relative overflow-hidden"
+          >
+            <a href="#">
+              <img
+                src="./img/hamidan.jpg"
+                class="aspect-video rounded-lg group-hover:scale-110 transition-transform duration-300 ease-linear"
+                alt="destinations"
+              />
+              <div
+                class="hidden group-hover:flex z-10 bg-slate-900 bg-opacity-60 w-full h-full absolute inset-0 rounded-lg justify-center items-center"
+              >
+                <h3 class="text-slate-200 font-medium text-lg sm:text-3xl">
+                  همدان
+                </h3>
+              </div>
+            </a>
+          </div>
+          <div
+            class="col-span-1 bg-rose-300 rounded-lg p-1 group relative overflow-hidden"
+          >
+            <a href="#">
+              <img
+                src="./img/yazd.jpg"
+                class="aspect-video rounded-lg group-hover:scale-110 transition-transform duration-300 ease-linear"
+                alt="destinations"
+              />
+              <div
+                class="hidden group-hover:flex z-10 bg-slate-900 bg-opacity-60 w-full h-full absolute inset-0 rounded-lg justify-center items-center"
+              >
+                <h3 class="text-slate-200 font-medium text-lg sm:text-3xl">
+                  یزد
+                </h3>
+              </div>
+            </a>
+          </div>
+          <div
+            class="col-span-1 bg-rose-300 rounded-lg p-1 group relative overflow-hidden"
+          >
+            <a href="#">
+              <img
+                src="./img/sari.jpg"
+                class="aspect-video rounded-lg group-hover:scale-110 transition-transform duration-300 ease-linear"
+                alt="destinations"
+              />
+              <div
+                class="hidden group-hover:flex z-10 bg-slate-900 bg-opacity-60 w-full h-full absolute inset-0 rounded-lg justify-center items-center"
+              >
+                <h3 class="text-slate-200 font-medium text-lg sm:text-3xl">
+                  ساری
+                </h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Foreign top destinations -->
+      <div
+        class="w-full h-full flex flex-col items-center justify-start gap-4 bg-slate-200 mt-10"
+      >
+        <!-- titles -->
+        <div class="flex flex-col items-center justify-start">
+          <h3 class="text-base sm:text-xl font-medium">
+            مقصد های پر طرفدار خارج از کشور
+          </h3>
+          <h3 class="text-sm sm:text-lg font-normal">
+            مقصد های پر طرفدار برای مسافر های شما به خارج از کشور
+          </h3>
+        </div>
+        <!-- cards container -->
+        <div class="grid sm:grid-cols-3 grid-cols-1 gap-4">
+          <!-- cards -->
+          <div
+            class="col-span-1 bg-rose-300 rounded-lg p-1 group relative overflow-hidden"
+          >
+            <a href="#">
+              <img
+                src="./img/paris.jpg"
+                class="aspect-video rounded-lg group-hover:scale-110 transition-transform duration-300 ease-linear"
+                alt="destinations"
+              />
+              <div
+                class="hidden group-hover:flex z-10 bg-slate-900 bg-opacity-60 w-full h-full absolute inset-0 rounded-lg justify-center items-center"
+              >
+                <h3 class="text-slate-200 font-medium text-lg sm:text-3xl">
+                  پاریس
+                </h3>
+              </div>
+            </a>
+          </div>
+          <div
+            class="col-span-1 bg-rose-300 rounded-lg p-1 group relative overflow-hidden"
+          >
+            <a href="#">
+              <img
+                src="./img/newyork.jpg"
+                class="aspect-video rounded-lg group-hover:scale-110 transition-transform duration-300 ease-linear"
+                alt="destinations"
+              />
+              <div
+                class="hidden group-hover:flex z-10 bg-slate-900 bg-opacity-60 w-full h-full absolute inset-0 rounded-lg justify-center items-center"
+              >
+                <h3 class="text-slate-200 font-medium text-lg sm:text-3xl">
+                  نیوورک
+                </h3>
+              </div>
+            </a>
+          </div>
+          <div
+            class="col-span-1 bg-rose-300 rounded-lg p-1 group relative overflow-hidden"
+          >
+            <a href="#">
+              <img
+                src="./img/london.jpg"
+                class="aspect-video rounded-lg group-hover:scale-110 transition-transform duration-300 ease-linear"
+                alt="destinations"
+              />
+              <div
+                class="hidden group-hover:flex z-10 bg-slate-900 bg-opacity-60 w-full h-full absolute inset-0 rounded-lg justify-center items-center"
+              >
+                <h3 class="text-slate-200 font-medium text-lg sm:text-3xl">
+                  لندن
+                </h3>
+              </div>
+            </a>
+          </div>
+          <div
+            class="col-span-1 bg-rose-300 rounded-lg p-1 group relative overflow-hidden"
+          >
+            <a href="#">
+              <img
+                src="./img/moscow.jpg"
+                class="aspect-video rounded-lg group-hover:scale-110 transition-transform duration-300 ease-linear"
+                alt="destinations"
+              />
+              <div
+                class="hidden group-hover:flex z-10 bg-slate-900 bg-opacity-60 w-full h-full absolute inset-0 rounded-lg justify-center items-center"
+              >
+                <h3 class="text-slate-200 font-medium text-lg sm:text-3xl">
+                  مسکو
+                </h3>
+              </div>
+            </a>
+          </div>
+          <div
+            class="col-span-1 bg-rose-300 rounded-lg p-1 group relative overflow-hidden"
+          >
+            <a href="#">
+              <img
+                src="./img/Tajmahal.jpg"
+                class="aspect-video rounded-lg group-hover:scale-110 transition-transform duration-300 ease-linear"
+                alt="destinations"
+              />
+              <div
+                class="hidden group-hover:flex z-10 bg-slate-900 bg-opacity-60 w-full h-full absolute inset-0 rounded-lg justify-center items-center"
+              >
+                <h3 class="text-slate-200 font-medium text-lg sm:text-3xl">
+                  تاج محل
+                </h3>
+              </div>
+            </a>
+          </div>
+          <div
+            class="col-span-1 bg-rose-300 rounded-lg p-1 group relative overflow-hidden"
+          >
+            <a href="#">
+              <img
+                src="./img/egpyt.jpg"
+                class="aspect-video rounded-lg group-hover:scale-110 transition-transform duration-300 ease-linear"
+                alt="destinations"
+              />
+              <div
+                class="hidden group-hover:flex z-10 bg-slate-900 bg-opacity-60 w-full h-full absolute inset-0 rounded-lg justify-center items-center"
+              >
+                <h3 class="text-slate-200 font-medium text-lg sm:text-3xl">
+                  مصر
+                </h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- offer's -->
+      <div class="w-full h-full relative mt-10 rounded-xl overflow-hidden">
+        <!-- offers background and content -->
+        <div
+          class="bg-gradient-to-tr from-purple-600 to-rose-600 bg-opacity-40 inset-0 w-full h-full relative flex flex-col justify-start items-center p-5"
+        >
+          <!-- offers details -->
+          <div class="flex flex-col gap-2 justify-center items-center">
+            <h3 class="text-lg sm:text-2xl font-bold text-yellow-400">
+              پیشنهاد های هتلیا
+            </h3>
+            <h4 class="text-base sm:text-xl font-medium text-yellow-500">
+              پیشنهاد هایی برای هتل و مسافرتان
+            </h4>
+            <!-- suggestion cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <!-- card -->
+              <div
+                class="col-span-1 rounded-xl p-2 bg-purple-300 flex flex-col gap-3 group overflow-hidden"
+              >
+                <!-- card-img -->
+                <div class="overflow-hidden w-full relative rounded-xl">
+                  <img
+                    src="./img/london.jpg"
+                    class="aspect-video rounded-xl group-hover:scale-150 transition-transform duration-300 ease-linear"
+                    alt=""
+                  />
+                </div>
+                <!-- title -->
+                <h3 class="text-lg sm:text-xl text-black font-light">
+                  پیشنهادی هتلیا
+                </h3>
+                <!-- description -->
+                <p
+                  style="
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                  "
+                  class="text-sm sm:text-base"
+                >
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                  تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای
+                  کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
+                  آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
+                  افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
+                  طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این
+                  صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                  راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+                  حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای
+                  موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن
+                  ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
+                  طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون
+                  و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
+                  و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                  کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+                  جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را
+                  برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو
+                  در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام
+                  و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان
+                  رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی
+                  سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار
+                  گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                  چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                  روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
+                  فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+                  ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته
+                  حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با
+                  نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
+                  طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این
+                  صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                  راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+                  حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای
+                  موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن
+                  ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
+                  طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون
+                  و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
+                  و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                  کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+                  جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را
+                  برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو
+                  در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام
+                  و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان
+                  رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی
+                  سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار
+                  گیرد.
+                </p>
+                <!-- more info btn -->
+                <a
+                  href="#"
+                  class="w-full h-10 rounded-lg bg-rose-500 text-white hover:ring ring-rose-600 transition-all duration-300 ease-linear flex justify-center items-center"
+                >
+                  عکس های بیشتر
+                </a>
+              </div>
+              <!-- card -->
+              <div
+                class="col-span-1 rounded-xl p-2 bg-purple-300 flex flex-col gap-3 group overflow-hidden"
+              >
+                <!-- card-img -->
+                <div class="overflow-hidden w-full relative rounded-xl">
+                  <img
+                    src="./img/Persepolis.jpg"
+                    class="aspect-video rounded-xl group-hover:scale-150 transition-transform duration-300 ease-linear"
+                    alt=""
+                  />
+                </div>
+                <!-- title -->
+                <h3 class="text-base sm:text-xl text-black font-light">
+                  پیشنهادی هتلیا
+                </h3>
+                <!-- description -->
+                <p
+                  style="
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                  "
+                  class="text-sm sm:text-base"
+                >
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                  تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای
+                  کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
+                  آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
+                  افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
+                  طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این
+                  صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                  راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+                  حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای
+                  موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن
+                  ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
+                  طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون
+                  و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
+                  و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                  کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+                  جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را
+                  برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو
+                  در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام
+                  و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان
+                  رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی
+                  سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار
+                  گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                  چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                  روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
+                  فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+                  ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته
+                  حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با
+                  نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
+                  طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این
+                  صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                  راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+                  حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای
+                  موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن
+                  ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
+                  طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون
+                  و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
+                  و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                  کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+                  جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را
+                  برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو
+                  در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام
+                  و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان
+                  رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی
+                  سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار
+                  گیرد.
+                </p>
+                <!-- more info btn -->
+                <a
+                  href="#"
+                  class="w-full h-10 rounded-lg bg-rose-500 text-white hover:ring ring-rose-600 transition-all duration-300 ease-linear flex justify-center items-center"
+                >
+                  عکس های بیشتر
+                </a>
+              </div>
+              <!-- card -->
+              <div
+                class="col-span-1 rounded-xl p-2 bg-purple-300 flex flex-col gap-3 group overflow-hidden"
+              >
+                <!-- card-img -->
+                <div class="overflow-hidden w-full relative rounded-xl">
+                  <img
+                    src="./img/paris.jpg"
+                    class="aspect-video rounded-xl group-hover:scale-150 transition-transform duration-300 ease-linear"
+                    alt=""
+                  />
+                </div>
+                <!-- title -->
+                <h3 class="text-base sm:text-xl text-black font-light">
+                  پیشنهادی هتلیا
+                </h3>
+                <!-- description -->
+                <p
+                  style="
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                  "
+                  class="text-sm sm:text-base"
+                >
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                  تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای
+                  کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
+                  آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
+                  افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
+                  طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این
+                  صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                  راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+                  حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای
+                  موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن
+                  ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
+                  طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون
+                  و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
+                  و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                  کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+                  جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را
+                  برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو
+                  در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام
+                  و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان
+                  رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی
+                  سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار
+                  گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                  چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                  روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
+                  فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+                  ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته
+                  حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با
+                  نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
+                  طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این
+                  صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                  راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+                  حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای
+                  موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن
+                  ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
+                  طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون
+                  و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
+                  و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                  کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+                  جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را
+                  برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو
+                  در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام
+                  و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان
+                  رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی
+                  سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار
+                  گیرد.
+                </p>
+                <!-- more info btn -->
+                <a
+                  href="#"
+                  class="w-full h-10 rounded-lg bg-rose-500 text-white hover:ring ring-rose-600 transition-all duration-300 ease-linear flex justify-center items-center"
+                >
+                  عکس های بیشتر
+                </a>
+              </div>
+            </div>
+            <h4
+              class="text-base sm:text-lg flex-1 font-bold text-rose-700 mt-5"
+            >
+              به پیشنهاد ما سفر کنید و تا 10 درصد تخفیف بگیرید
+            </h4>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- end main -->
+    <!-- footer -->
+    <footer class="w-full sm:h-[30rem] h-full relative flex flex-col overflow-hidden">
+      <!-- footer background and content -->
+      <div
+        class="bg-gradient-to-tr from-purple-600 bg-rose-600 bg-opacity-40 inset-0 w-full h-full z-10 relative flex flex-col p-2 sm:p-10"
+      >
+        <!-- footer first list -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-10 p-10">
+          <ul class="sm:mr-5 flex flex-col gap-2">
+            <h2 class="text-base sm:text-lg font-medium text-white">
+              مقصد های محبوب داخلی
+            </h2>
+            <a href="#">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                تهران
+              </li>
+            </a>
+            <a href="#">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                مشهد
+              </li>
+            </a>
+            <a href="#">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                شیراز
+              </li>
+            </a>
+            <a href="#">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                اصفهان
+              </li>
+            </a>
+            <a href="#">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                تبریز
+              </li>
+            </a>
+            <a href="#">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                همدان
+              </li>
+            </a>
+          </ul>
+          <ul class="sm:mr-5 flex flex-col gap-2">
+            <h2 class="text-base sm:text-lg font-medium text-white">
+              مقصد های محبوب خارجی
+            </h2>
+            <a href="#">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                پاریس
+              </li>
+            </a>
+            <a href="#">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                نیویورک
+              </li>
+            </a>
+            <a href="#">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                لندن
+              </li>
+            </a>
+            <a href="#">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                مصر
+              </li>
+            </a>
+            <a href="#">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                مسکو
+              </li>
+            </a>
+            <a href="#">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                تاج محل
+              </li>
+            </a>
+          </ul>
+          <ul class="sm:mr-5 flex flex-col gap-2">
+            <h2 class="text-base sm:text-lg font-medium text-white">
+              هتل های در دسترس
+            </h2>
+            <a href="#">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                تهران
+              </li>
+            </a>
+            <a href="#">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                مشهد
+              </li>
+            </a>
+            <a href="#">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                پاریس
+              </li>
+            </a>
+            <a href="#">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                لندن
+              </li>
+            </a>
+            <a href="#">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                شیراز
+              </li>
+            </a>
+            <a href="#">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                اصفهان
+              </li>
+            </a>
+          </ul>
+          <!-- search box & logo -->
+          <div
+            class="flex flex-col-reverse w-full sm:w-2/3 h-full justify-center items-center"
+          >
+            <input
+              type="search"
+              class="rounded-md w-full h-1/6 bg-slate-100 bg-opacity-40 border border-purple-500 p-2 placeholder:text-black text-clack placeholder:italic focus:ring-1 ring-purple-600 focus:outline-none transition-all duration-300 ease-in"
+              placeholder="جستجو هتل یا مکان مورد نظر..."
+            />
+            <img
+              src="./img/logo.png"
+              class="top-1 left-1 w-24 h-24"
+              alt="destinations"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- footer background image -->
+      <img
+        src="./img/paris.jpg"
+        class="w-full h-full absolute top-0 right-0"
+        alt="destinations"
+      />
+    </footer>
+    <!-- end footer -->
+  </body>
+</html>
