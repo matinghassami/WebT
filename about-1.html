@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>درباره ما</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/app.css" />
+    <link rel="stylesheet" href="./dist/index.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap"
+      rel="stylesheet"
+    />
+    <!-- alpine js -->
+    <script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
+  </head>
+  <body>
+    <!-- site header -->
+    <header class="w-full sm:h-[34rem] h-[20rem] relative" x-data="{open : false}">
+      <!-- header background and content -->
+      <div
+        class="bg-gradient-to-tr from-purple-700 to-rose-600 bg-opacity-40 inset-0 w-full h-full z-10 relative flex flex-col justify-center items-center"
+      >
+        <!-- navbar -->
+        <nav
+          class="fixed top-0 inset-y-0 bg-purple-800 w-full h-16 flex flex-row-reverse justify-between items-center p-4 pl-10"
+        >
+          <!-- nav logo -->
+          <img
+            src="./img/logo.png"
+            class="top-1 left-1 w-24 h-24"
+            alt="destinations"
+          />
+          <!-- search input -->
+          <input
+            type="search"
+            class="rounded-md w-1/4 h-5/6 hidden sm:block bg-slate-100 bg-opacity-40 border border-rose-500 p-2 placeholder:text-black text-clack placeholder:italic focus:ring-1 ring-rose-600 focus:outline-none transition-all duration-300 ease-in"
+            placeholder="جستجو خدمات ما ..."
+          />
+          <!-- nav links -->
+          <div class="flex flex-row gap-6">
+            <a href="#" class="hidden sm:flex">لندینگ</a>
+            <a href="#" class="hidden sm:flex">صفحات</a>
+            <a href="#" class="hidden sm:flex">صفحات خاص</a>
+            <a href="#" class="hidden sm:flex">کامپوننت ها</a>
+            <a href="#" class="hidden sm:flex">ورود</a>
+            <a href="#" class="hidden sm:flex">ثبت نام</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 block sm:hidden cursor-pointer"
+              @click="open = true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5"
+              />
+            </svg>
+          </div>
+        </nav>
+        <!-- header details -->
+        <div class="flex flex-col gap-2 justify-center items-center">
+          <h1
+            class="sm:text-2xl text-base font-bold text-rose-500 animate-bounce"
+          >
+            درباره ما
+          </h1>
+          <h2
+            class="sm:text-xl text-xs font-medium text-violet-500 animate-bounce"
+          >
+            بهترین ها در اختیار شماست
+          </h2>
+        </div>
+      </div>
+      <div
+      x-transition:enter="transition ease-out duration-300"
+      x-transition:enter-start="opacity-0"
+      x-transition:enter-end="opacity-100"
+      x-transition:leave="transition ease-in duration-300"
+      x-transition:leave-start="opacity-100"
+      x-transition:leave-end="opacity-0"
+      x-cloak
+      class="bg-slate-900 bg-opacity-70 fixed inset-0 z-40 flex flex-col gap-4 backdrop-blur-md" x-show="open">
+      </div>
+      <div
+      x-transition:enter="transition ease-out duration-300"
+      x-transition:enter-start="opacity-0"
+      x-transition:enter-end="opacity-100"
+      x-transition:leave="transition ease-in duration-300"
+      x-transition:leave-start="opacity-100"
+      x-transition:leave-end="opacity-0"
+      x-cloak
+      class="flex flex-col gap-6 z-50 fixed inset-y-0 right-0 bg-slate-200 w-1/2 p-5" x-show="open" x-on:click.away="open = false">
+        <a href="#">لندینگ</a>
+        <a href="#">صفحات</a>
+        <a href="#">صفحات خاص</a>
+        <a href="#">کامپوننت ها</a>
+        <a href="#">ورود</a>
+        <a href="#">ثبت نام</a>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start main -->
+    <main class="w-full h-full flex flex-col p-4 sm:p-10 bg-slate-200">
+      <!-- about us section -->
+      <div class="flex flex-row gap-2">
+        <!-- process -->
+        <div
+          class="flex flex-col w-1/2 justify-center items-center border-2 border-purple-300 p-1 rounded-lg hover:bg-gradient-to-tr from-rose-500 to-purple-700 hover:scale-105 transition-all duration-300 ease-in group"
+        >
+          <h2 class="text-base font-bold group-hover:text-white">
+            فرآیند کاری ما
+          </h2>
+          <p
+            class="text-sm font-medium text-slate-600 leading-relaxed text-center group-hover:text-white"
+          >
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+            استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
+            و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای
+            زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
+            متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان
+            رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد
+            کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه و
+            جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار
+            گیرد.
+          </p>
+        </div>
+        <!-- about container -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-3 w-1/2 justify-center items-center gap-2"
+        >
+          <!-- card -->
+          <div
+            class="w-full border border-purple-300 p-1 rounded-lg justify-center items-center hover:bg-gradient-to-tr from-rose-500 to-purple-700 hover:scale-105 transition-all duration-300 ease-in group"
+          >
+            <h2 class="text-base font-bold group-hover:text-white">شرکت ما</h2>
+            <p
+              class="text-sm font-medium text-slate-600 leading-relaxed text-center group-hover:text-white"
+            >
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون درصد گذشته حال و
+              آینده، شناخت استفاده قرار گیرد.
+            </p>
+          </div>
+          <!-- card -->
+          <div
+            class="w-full border border-purple-300 p-1 rounded-lg justify-center items-center hover:bg-gradient-to-tr from-rose-500 to-purple-700 hover:scale-105 transition-all duration-300 ease-in group"
+          >
+            <h2 class="text-base font-bold group-hover:text-white">
+              ما چه ارزش هایی داریم
+            </h2>
+            <p
+              class="text-sm font-medium text-slate-600 leading-relaxed text-center group-hover:text-white"
+            >
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون درصد گذشته حال و
+              آینده، شناخت استفاده قرار گیرد.
+            </p>
+          </div>
+          <!-- card -->
+          <div
+            class="w-full border border-purple-300 p-1 rounded-lg justify-center items-center hover:bg-gradient-to-tr from-rose-500 to-purple-700 hover:scale-105 transition-all duration-300 ease-in group"
+          >
+            <h2 class="text-base font-bold group-hover:text-white">
+              تماس با ما
+            </h2>
+            <p
+              class="text-sm font-medium text-slate-600 leading-relaxed text-center group-hover:text-white"
+            >
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون درصد گذشته حال و
+              آینده، شناخت استفاده قرار گیرد.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- team section -->
+      <div
+        class="flex flex-col gap-5 bg-purple-400 rounded-lg mt-10 items-center justify-center p-2"
+      >
+        <h2 class="text-xl font-bold text-white">تیم قابل اعتماد ما</h2>
+        <!-- border -->
+        <div
+          class="border-2 border-purple-700 rounded-lg w-40 h-1 animate-bounce"
+        ></div>
+        <!-- description -->
+        <p
+          class="text-base font-normal leading-relaxed text-center text-slate-200"
+        >
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+          از طراحان گرافیک است
+        </p>
+        <!-- team cards -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <!-- card -->
+          <div
+            class="bg-white p-2 overflow-hidden flex flex-col gap-2 rounded-md justify-center items-center group"
+          >
+            <img
+              src="./img/12.jpg"
+              class="w-full rounded-lg group-hover:scale-105 transition-all duration-300 ease-in"
+              alt=""
+            />
+            <div class="flex flex-col justify-center items-center">
+              <h3 class="text-lg font-bold">علی محمدی</h3>
+              <p class="text-sm font-light text-slate-500">مدیر</p>
+            </div>
+          </div>
+          <!-- card -->
+          <div
+            class="bg-white p-2 overflow-hidden flex flex-col gap-2 rounded-md justify-center items-center group"
+          >
+            <img
+              src="./img/10.jpg"
+              class="w-full rounded-lg group-hover:scale-105 transition-all duration-300 ease-in"
+              alt=""
+            />
+            <div class="flex flex-col justify-center items-center">
+              <h3 class="text-lg font-bold">علی احمدی</h3>
+              <p class="text-sm font-light text-slate-500">توسعه دهنده</p>
+            </div>
+          </div>
+          <!-- card -->
+          <div
+            class="bg-white p-2 overflow-hidden flex flex-col gap-2 rounded-md justify-center items-center group"
+          >
+            <img
+              src="./img/2.jpg"
+              class="w-full rounded-lg group-hover:scale-105 transition-all duration-300 ease-in"
+              alt=""
+            />
+            <div class="flex flex-col justify-center items-center">
+              <h3 class="text-lg font-bold">علی فردین</h3>
+              <p class="text-sm font-light text-slate-500">مدیرعامل</p>
+            </div>
+          </div>
+          <!-- card -->
+          <div
+            class="bg-white p-2 overflow-hidden flex flex-col gap-2 rounded-md justify-center items-center group"
+          >
+            <img
+              src="./img/8.jpg"
+              class="w-full rounded-lg group-hover:scale-105 transition-all duration-300 ease-in"
+              alt=""
+            />
+            <div class="flex flex-col justify-center items-center">
+              <h3 class="text-lg font-bold">علی عباسی</h3>
+              <p class="text-sm font-light text-slate-500">بازاریاب</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- platforms -->
+      <div class="w-full flex flex-col justify-center items-center mt-10">
+        <h2 class="text-xl font-bold">ما را در شبکه ها اجتماعی دنبال کنید</h2>
+        <!-- border -->
+        <div
+          class="border-2 border-purple-600 rounded-lg w-40 h-1 animate-bounce mt-4 mb-2"
+        ></div>
+        <!-- description -->
+        <p
+          class="text-base font-normal leading-relaxed text-center text-slate-600 mb-4"
+        >
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+          از طراحان گرافیک است
+        </p>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <!-- platforms section -->
+          <div
+            class="border border-purple-700 p-4 flex flex-row justify-center items-end rounded-lg hover:scale-105 transition-all duration-200 ease-in hover:bg-gradient-to-tr from-purple-700 to-rose-500 group"
+          >
+            <div class="flex flex-col gap-2">
+              <h2 class="text-lg font-bold group-hover:text-slate-200">
+                Twitter
+              </h2>
+              <h6
+                class="text-base font-light text-slate-500 group-hover:text-slate-200"
+              >
+                توییتر
+              </h6>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 group-hover:text-slate-200 animate-pulse"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13 7l5 5m0 0l-5 5m5-5H6"
+              />
+            </svg>
+          </div>
+          <div
+            class="border border-purple-700 p-4 flex flex-row justify-center items-end rounded-lg hover:scale-105 transition-all duration-200 ease-in hover:bg-gradient-to-tr from-purple-700 to-rose-500 group"
+          >
+            <div class="flex flex-col gap-2">
+              <h2 class="text-lg font-bold group-hover:text-slate-200">
+                Facebook
+              </h2>
+              <h6
+                class="text-base font-light text-slate-500 group-hover:text-slate-200"
+              >
+                فیبسبوک
+              </h6>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 group-hover:text-slate-200 animate-pulse"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13 7l5 5m0 0l-5 5m5-5H6"
+              />
+            </svg>
+          </div>
+          <div
+            class="border border-purple-700 p-4 flex flex-row justify-center items-end rounded-lg hover:scale-105 transition-all duration-200 ease-in hover:bg-gradient-to-tr from-purple-700 to-rose-500 group"
+          >
+            <div class="flex flex-col gap-2">
+              <h2 class="text-lg font-bold group-hover:text-slate-200">
+                Instagram
+              </h2>
+              <h6
+                class="text-base font-light text-slate-500 group-hover:text-slate-200"
+              >
+                اینستاگرام
+              </h6>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 group-hover:text-slate-200 animate-pulse"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13 7l5 5m0 0l-5 5m5-5H6"
+              />
+            </svg>
+          </div>
+          <div
+            class="border border-purple-700 p-4 flex flex-row justify-center items-end rounded-lg hover:scale-105 transition-all duration-200 ease-in hover:bg-gradient-to-tr from-purple-700 to-rose-500 group"
+          >
+            <div class="flex flex-col gap-2">
+              <h2 class="text-lg font-bold group-hover:text-slate-200">
+                Telegram
+              </h2>
+              <h6
+                class="text-base font-light text-slate-500 group-hover:text-slate-200"
+              >
+                تلگرام
+              </h6>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 group-hover:text-slate-200 animate-pulse"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13 7l5 5m0 0l-5 5m5-5H6"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- end main -->
+
+    <!-- footer -->
+    <footer class="w-full sm:h-[30rem] h-[30rem] relative flex flex-col">
+      <!-- footer background and content -->
+      <div
+        class="bg-gradient-to-tr from-purple-700 bg-rose-600 bg-opacity-40 inset-0 w-full h-full z-10 relative flex flex-col p-2 sm:p-10"
+      >
+        <!-- footer first list -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-10 p-10">
+          <ul class="sm:mr-5 flex flex-col gap-2">
+            <h2 class="text-base sm:text-lg font-medium text-white">
+              صفحات لندینگ
+            </h2>
+            <a href="./app.html">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                اپ
+              </li>
+            </a>
+            <a href="./book-landing.html">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                کتاب
+              </li>
+            </a>
+            <a href="./hotel.html">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                هتل
+              </li>
+            </a>
+            <a href="./startup.html">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                استارت آپ
+              </li>
+            </a>
+            <a href="./art.html">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                هنر
+              </li>
+            </a>
+          </ul>
+          <ul class="sm:mr-5 flex flex-col gap-2">
+            <h2 class="text-base sm:text-lg font-medium text-white">
+              صفحات خاص
+            </h2>
+            <a href="./error.html">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                ارور
+              </li>
+            </a>
+            <a href="./gallery.html">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                گالری
+              </li>
+            </a>
+            <a href="./faq.html">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                سئوالات متداول
+              </li>
+            </a>
+          </ul>
+          <ul class="sm:mr-5 flex flex-col gap-2">
+            <h2 class="text-base sm:text-lg font-medium text-white">
+              کامپوننت ها و صفحات عادی
+            </h2>
+            <a href="./plan.html">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                پلن ها
+              </li>
+            </a>
+            <a href="./features-1.html">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                ویژگی ها
+              </li>
+            </a>
+            <a href="./about-1.html">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                درابره ما
+              </li>
+            </a>
+            <a href="./team.html">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                تیم
+              </li>
+            </a>
+            <a href="./conatct-us-2.html">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                تماس با ما
+              </li>
+            </a>
+            <a href="./online-shop.html">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                فروشگاه
+              </li>
+            </a>
+            <a href="./blog-2.html">
+              <li class="text-slate-100 text-sm sm:text-base font-normal">
+                بلاگ
+              </li>
+            </a>
+          </ul>
+          <!-- search box & logo -->
+          <div
+            class="flex flex-col-reverse w-full sm:w-2/3 h-full justify-center items-center"
+          >
+            <input
+              type="search"
+              class="rounded-md w-full h-1/6 bg-slate-100 bg-opacity-40 border border-rose-500 p-2 placeholder:text-black text-clack placeholder:italic focus:ring-1 ring-rose-600 focus:outline-none transition-all duration-300 ease-in"
+              placeholder="جستجو هتل یا مکان مورد نظر..."
+            />
+            <img
+              src="./img/logo.png"
+              class="top-1 left-1 w-24 h-24"
+              alt="destinations"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- footer background image -->
+      <img
+        src="./img/web.jpg"
+        class="w-full h-full absolute top-0 right-0"
+        alt="destinations"
+      />
+    </footer>
+    <!-- end footer -->
+  </body>
+  <script>
+    document.addEventListener("contextmenu", (event) => event.preventDefault());
+  </script>
+</html>
